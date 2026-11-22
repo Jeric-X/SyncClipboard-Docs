@@ -46,7 +46,7 @@ On Arch Linux and Arch-based distributions, you can install `syncclipboard-deskt
 
 > [!NOTE]
 > - To use a package other than AppImage, your system needs glibc 2.38 or later.
-> - If syncing lags or uploads garbled text, you can [use xclip or wl-clipboard to help SyncClipboard read and write the clipboard](./linux/clipboard-tools).
+> - If syncing lags or uploads garbled text, you can [use xclip or wl-clipboard to help SyncClipboard read and write the clipboard](./linux-clipboard-tools).
 > - If hotkeys or copy/paste misbehave on Wayland, see the [input device permissions guide](https://github.com/Jeric-X/SyncClipboard/blob/master/docs/Linux-Input-Permissions.md).
 
 ## Uninstall

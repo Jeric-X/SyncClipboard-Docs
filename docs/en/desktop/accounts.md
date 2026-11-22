@@ -38,4 +38,4 @@ After saving, you return to **Syncing**. Open the dropdown on the right of **Syn
   width="850"
 />
 
-To sync this device’s clipboard, turn on **Clipboard Syncing** on this page. To sync history across devices, turn on **Sync History** in [History settings](../history#syncing-to-other-devices).
+To sync this device’s clipboard, turn on **Clipboard Syncing** on this page. To sync history across devices, turn on **Sync History** in [History settings](./history#syncing-to-other-devices).

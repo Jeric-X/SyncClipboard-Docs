@@ -22,4 +22,4 @@ Open **Server** in the desktop client. Click the gear next to the port and accou
 Once the server is running, add a SyncClipboard account on each of your other devices. Enter the host computer’s LAN address, for example `http://192.168.1.20:5033`, and the username and password you set on the server.
 
 > [!NOTE]
-> Turning on the server does not automatically enable sync on the host computer. To sync that computer, [add an account](./sync/accounts) on it as well. For the server URL, you can use the loopback address `127.0.0.1` and the port you configured, for example `http://127.0.0.1:5033`.
+> Turning on the server does not automatically enable sync on the host computer. To sync that computer, [add an account](./accounts) on it as well. For the server URL, you can use the loopback address `127.0.0.1` and the port you configured, for example `http://127.0.0.1:5033`.

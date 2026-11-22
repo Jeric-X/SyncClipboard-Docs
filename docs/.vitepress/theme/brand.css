@@ -1,9 +1,9 @@
 :root {
+  scrollbar-gutter: stable;
   --vp-c-brand-1: #48669f;
   --vp-c-brand-2: #3d578a;
   --vp-c-brand-3: #6986C3;
   --vp-c-brand-soft: rgb(105 134 195 / 14%);
-  --vp-home-hero-name-color: var(--vp-c-brand-3);
 }
 
 .dark {

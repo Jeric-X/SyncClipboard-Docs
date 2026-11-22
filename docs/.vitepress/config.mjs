@@ -4,12 +4,13 @@ function sidebar(english) {
   const prefix = english ? '/en/' : '/'
   const page = (path, zh, en) => ({ text: english ? en : zh, link: prefix + path })
   return [
-    page('guide/getting-started', '开始同步', 'Start syncing'),
+    page('', '简介', 'Introduction'),
+    page('getting-started', '开始同步', 'Start syncing'),
     {
       text: english ? 'Desktop clients' : '桌面客户端',
       items: [
         page('desktop/', '下载与安装', 'Download and install'),
-        page('desktop/sync/accounts', '同步账号', 'Sync accounts'),
+        page('desktop/accounts', '同步账号', 'Sync accounts'),
         page('desktop/history', '历史记录', 'History'),
         page('desktop/builtin-server', '内置服务器', 'Built-in server')
       ]
