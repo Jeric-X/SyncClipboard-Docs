@@ -4,9 +4,9 @@
 
 Install the SyncClipboard server on a host that all your devices can reach, or use an existing WebDAV or S3 service as your sync server.
 
-The official SyncClipboard server supports real-time clipboard sync and clipboard history sync. WebDAV and S3 support only real-time clipboard sync.
-
 If all your devices are on the same local network, you can use the desktop client’s built-in server without deploying a separate server.
+
+The official SyncClipboard server supports real-time clipboard sync and clipboard history sync. WebDAV and S3 support only real-time clipboard sync.
 
 - [Deploy the server with Docker](./server/#docker)
 - [Use the desktop client’s built-in server](./desktop/builtin-server)
