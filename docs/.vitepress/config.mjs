@@ -12,13 +12,15 @@ function sidebar(english) {
         page('desktop/', '下载与安装', 'Download and install'),
         page('desktop/accounts', '同步账号', 'Sync accounts'),
         page('desktop/history', '历史记录', 'History'),
-        page('desktop/builtin-server', '内置服务器', 'Built-in server')
+        page('desktop/builtin-server', '内置服务器', 'Built-in server'),
+        page('desktop/command-line', '命令行参数', 'Command-line arguments')
       ]
     },
     page('mobile/', '移动端', 'Mobile clients'),
     page('server/', '服务端', 'Server'),
     page('api', 'API', 'API'),
-    page('community', '社区项目', 'Community projects')
+    page('community', '社区项目', 'Community projects'),
+    page('breaking-changes', '不兼容变更记录', 'Breaking changes')
   ]
 }
 
