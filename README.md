@@ -19,3 +19,7 @@ npm run docs:preview
 ```
 
 站点使用 SyncClipboard 和 SyncClipboard Mobile 项目的图标和截图，原项目授权见 `licenses/`。
+
+## 发布文档
+
+将文档源码推送到 `publish` 分支后，Cloudflare Pages 会在仓库根目录运行 `npm run docs:build`，并发布 `docs/.vitepress/dist` 中的静态文件。
