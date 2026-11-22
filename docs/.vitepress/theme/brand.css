@@ -13,3 +13,11 @@
   --vp-button-brand-hover-bg: #48669f;
   --vp-button-brand-active-bg: #3d578a;
 }
+
+@media (min-width: 768px) {
+  .VPNavBar .VPNavBarSearch {
+    flex-grow: 0;
+    padding-left: 0;
+    margin-right: 12px;
+  }
+}
