@@ -1,26 +1,13 @@
-# WebDAV 与 S3
+---
+search: false
+sidebar: false
+aside: false
+head:
+  - - meta
+    - http-equiv: refresh
+      content: "0; url=/desktop/sync/accounts.html"
+---
 
-桌面客户端和 Android 客户端可以直接把当前剪贴板存入 WebDAV 或兼容 S3 的对象存储。各台设备要指向同一个工作目录或对象前缀。如果还需要跨设备同步历史记录，选择 [SyncClipboard 服务器](./server)。
+# 页面已迁移
 
-## 连接 WebDAV
-
-1. 在 WebDAV 服务上创建专用目录，例如 `syncclipboard`。复制该目录的 **WebDAV 地址**。Nextcloud 等服务的网页浏览地址与 WebDAV 地址不同。
-2. 在客户端添加 WebDAV 账号，填写工作目录的完整地址（例如 `https://dav.example.com/dav/syncclipboard`）和有读写权限的凭据。路径里有空格时用 `%20`，末尾省略斜杠。
-3. 在其他设备填入同一目录。桌面客户端会创建用来传文件的 `file` 子目录；仅使用移动工具时可提前手动创建。
-
-如果文字能同步而图片或文件失败，检查 `file` 子目录是否存在，以及该账号能否在其中写入文件。
-
-## 连接 S3 兼容存储
-
-先在存储服务中准备存储桶和访问密钥，再在客户端添加 S3 账号。
-
-| 客户端字段 | 填写内容 |
-| --- | --- |
-| 服务器地址（Endpoint） | AWS 可留空；其他服务填写提供商给出的 S3 API 端点 |
-| 区域（Region） | 提供商要求的签名区域，例如 `us-east-1` |
-| 存储桶名称 | 已创建的存储桶名称 |
-| 对象前缀 | 可选，例如 `syncclipboard`，所有设备保持相同 |
-| 路径风格寻址 | 按提供商要求设置，许多兼容服务使用路径风格 |
-| Access Key ID 和 Secret Access Key | 能读写所选存储位置的访问凭据 |
-
-在一台设备上传文字，然后在另一台设备下载。若两台设备都能连接却看不到对方更新，逐项核对存储桶和前缀，包括字母大小写。
+请参阅[同步账号](/desktop/sync/accounts.html)。

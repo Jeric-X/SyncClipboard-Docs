@@ -1,21 +1,20 @@
-# Your first sync
+# Start syncing
 
-Start with a computer and an Android phone on the same local network. The computer will host the shared clipboard. If you already have WebDAV or S3 storage, you can [connect both devices to it](./storage) instead.
+## Set up a server
 
-## 1. Start the server on your computer
+Install the SyncClipboard server on a host that all your devices can reach, or use an existing WebDAV or S3 service as your sync server.
 
-Install the [desktop app](./desktop). Open **Server**, set a username, password, and port, then turn on the server. The default port is `5033`. Find the computer’s LAN address, for example `192.168.1.20`.
+The official SyncClipboard server supports real-time clipboard sync and clipboard history sync. WebDAV and S3 support only real-time clipboard sync.
 
-## 2. Connect the computer’s clipboard
+If all your devices are on the same local network, you can use the desktop client’s built-in server without deploying a separate server.
 
-Open **Syncing → Sync Account → Add Account** and choose the SyncClipboard server type. Enter `http://127.0.0.1:5033` and the credentials you just set. Select the account and turn on clipboard syncing.
+- [Deploy the server with Docker](../server/#docker)
+- [Use the desktop client’s built-in server](../desktop/builtin-server)
 
-## 3. Connect your phone
+## Connect your devices
 
-Install the [Android app](./android). Open the server settings, add a SyncClipboard server, and enter the computer’s LAN address (for example `http://192.168.1.20:5033`) and the same credentials. Test the connection, save it and select it. On a phone, `127.0.0.1` points back to the phone itself.
+Once the server is ready, connect each device that will share the clipboard to the same server.
 
-## 4. Test both directions
-
-Copy a distinct phrase such as `from my computer 123` on the computer. On the phone, open SyncClipboard, copy the entry under **Remote Clipboard**, and paste it into a note. Copy a different phrase on the phone, upload the local clipboard from the app, and paste it on the computer.
-
-If the connection times out, check that the phone can reach the computer on Wi-Fi, the port matches, and the computer’s firewall allows LAN connections to that port. If the connection succeeds but the content stays the same, check the active account on each device and the desktop’s clipboard sync switch.
+- **Windows, macOS, or Linux** — [Add a sync account](../desktop/sync/accounts) in the desktop client.
+- **Android** — In [SyncClipboard Mobile](../mobile/#android), go to **Settings → Server Configuration → Add** and enter the server details.
+- **iPhone or iPad** — [Import the shortcut](../mobile/#ios) and enter the server details when prompted.

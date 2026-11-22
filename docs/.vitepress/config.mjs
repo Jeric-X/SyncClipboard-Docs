@@ -1,30 +1,24 @@
 import { defineConfig } from 'vitepress'
 
-const sections = [
-  ['使用指南', 'User guide', [
-    ['getting-started', '第一次同步', 'Your first sync'],
-    ['desktop', '桌面客户端', 'Desktop clients'],
-    ['android', 'Android 客户端', 'Android app'],
-    ['mobile-tools', 'iOS 与其他移动工具', 'iOS and other mobile tools']
-  ]],
-  ['服务器', 'Servers', [
-    ['server', 'SyncClipboard 服务器', 'SyncClipboard server'],
-    ['storage', 'WebDAV 与 S3', 'WebDAV and S3']
-  ]],
-  ['开发参考', 'Reference', [
-    ['protocol', '剪贴板协议', 'Clipboard protocol']
-  ]]
-]
-
 function sidebar(english) {
-  const prefix = english ? '/en/guide/' : '/guide/'
-  return sections.map(([zh, en, pages]) => ({
-    text: english ? en : zh,
-    items: pages.map(([slug, zhTitle, enTitle]) => ({
-      text: english ? enTitle : zhTitle,
-      link: prefix + slug
-    }))
-  }))
+  const prefix = english ? '/en/' : '/'
+  const page = (path, zh, en) => ({ text: english ? en : zh, link: prefix + path })
+  return [
+    page('guide/getting-started', '开始同步', 'Start syncing'),
+    {
+      text: english ? 'Desktop clients' : '桌面客户端',
+      items: [
+        page('desktop/', '下载与安装', 'Download and install'),
+        page('desktop/sync/accounts', '同步账号', 'Sync accounts'),
+        page('desktop/history', '历史记录', 'History'),
+        page('desktop/builtin-server', '内置服务器', 'Built-in server')
+      ]
+    },
+    page('mobile/', '移动端', 'Mobile clients'),
+    page('server/', '服务端', 'Server'),
+    page('api', 'API', 'API'),
+    page('community', '社区项目', 'Community projects')
+  ]
 }
 
 export default defineConfig({
@@ -37,10 +31,6 @@ export default defineConfig({
       label: '简体中文',
       lang: 'zh-CN',
       themeConfig: {
-        nav: [
-          { text: '使用指南', link: '/guide/getting-started' },
-          { text: '服务器', link: '/guide/server' }
-        ],
         sidebar: sidebar(false),
         outline: { label: '本页目录' },
         docFooter: { prev: '上一页', next: '下一页' },
@@ -55,10 +45,6 @@ export default defineConfig({
       lang: 'en-US',
       description: 'User guides for SyncClipboard desktop, mobile, and server.',
       themeConfig: {
-        nav: [
-          { text: 'Guide', link: '/en/guide/getting-started' },
-          { text: 'Servers', link: '/en/guide/server' }
-        ],
         sidebar: sidebar(true)
       }
     }
