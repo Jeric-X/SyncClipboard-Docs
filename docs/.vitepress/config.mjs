@@ -26,6 +26,7 @@ function sidebar(english) {
       text: english ? 'Development' : '开发',
       items: [
         page('api', 'API', 'API'),
+        page('hash', 'Hash 计算方法', 'Hash calculation'),
         page('s3', 'S3 设计规范', 'S3 protocol specification')
       ]
     }

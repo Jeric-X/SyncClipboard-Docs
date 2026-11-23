@@ -36,7 +36,7 @@ PUT /SyncClipboard.json
 - `hasData`标识是否使用一个额外文件存储完整的剪贴板信息
   - 对于Image/File/Group类型，`hasData`恒为true
   - 对于Text类型，可以根据原字符串的长度，可选是否使用额外的UTF8编码的`.txt`文件存储完整字符串，如果这样做，`text`字段仅储存完整字符串的起始部分内容
-- `hash`值为剪贴板内容的唯一标识，计算方法请参考[docs/Hash.md](https://github.com/Jeric-X/SyncClipboard/blob/master/docs/Hash.md)
+- `hash`值为剪贴板内容的唯一标识，计算方法请参考[Hash 计算方法](./hash.md)
   - 发送方应尽量提供`hash`信息
   - 当`hash`值存在时，接收方应验证`hash`信息与剪贴板内容的一致性，在不一致时执行错误处理流程
   - 当`hash`为空时，或处于无法计算`hash`的环境，可以使用`type`/`text`的组合简单判断剪贴板内容的相等性

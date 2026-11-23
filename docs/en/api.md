@@ -36,7 +36,7 @@ PUT /SyncClipboard.json
 - `hasData` indicates whether an additional file is used to store the complete clipboard information
   - For Image/File/Group types, `hasData` is always true
   - For Text type, depending on the original string length, you can optionally use an additional UTF8-encoded `.txt` file to store the complete string. If so, the `text` field only stores the beginning part of the complete string
-- `hash` value is a unique identifier of the clipboard content. For the calculation method, please refer to [docs/Hash.md](https://github.com/Jeric-X/SyncClipboard/blob/master/docs/Hash.md)
+- `hash` value is a unique identifier of the clipboard content. For the calculation method, please refer to [Hash calculation](./hash.md)
   - The sender should provide `hash` information whenever possible
   - When the `hash` value exists, the receiver should verify the consistency between the `hash` information and the clipboard content, and execute the error handling process when inconsistent
   - When `hash` is empty, or in an environment where `hash` cannot be calculated, you can use the combination of `type`/`text` to simply determine the equality of clipboard content
