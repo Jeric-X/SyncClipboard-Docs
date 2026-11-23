@@ -4,7 +4,7 @@ outline: [2, 3]
 
 # Community projects
 
-These community-maintained clients and tools work with SyncClipboard.
+This page lists third-party clients and tools that support the SyncClipboard API.
 
 ## Android
 

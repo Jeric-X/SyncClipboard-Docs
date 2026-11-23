@@ -18,4 +18,4 @@ Clipboard history can be searched by text or file name. Frequently used items ca
 
 SyncClipboard also enhances the local clipboard by supporting image copy and paste between apps and folders, downloading original images when copying from web pages, and improving compatibility with image formats such as HEIC and WebP.
 
-For instructions on choosing a server and setting up clients, see [Start syncing](./getting-started).
+[Start syncing →](./getting-started)

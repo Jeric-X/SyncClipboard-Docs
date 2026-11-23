@@ -4,7 +4,7 @@ outline: [2, 3]
 
 # 社区项目
 
-以下客户端和工具由社区维护，可用于同步剪贴板。
+这里收录了支持 SyncClipboard API 的第三方客户端和工具。
 
 ## Android
 
