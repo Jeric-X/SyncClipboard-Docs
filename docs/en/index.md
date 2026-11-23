@@ -6,6 +6,8 @@ title: Introduction
 import IntroHistory from '../.vitepress/theme/IntroHistory.vue'
 </script>
 
+# SyncClipboard
+
 <IntroHistory alt="SyncClipboard history panels on Windows, Linux, and macOS." />
 
 SyncClipboard syncs clipboard contents across devices. Copy text, an image, or a file on one device and paste it on another connected to the same server.

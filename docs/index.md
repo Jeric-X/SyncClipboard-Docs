@@ -6,6 +6,8 @@ title: 简介
 import IntroHistory from './.vitepress/theme/IntroHistory.vue'
 </script>
 
+# SyncClipboard
+
 <IntroHistory alt="Windows、Linux 和 macOS 上的 SyncClipboard 历史记录面板。" />
 
 SyncClipboard 是一款跨设备剪贴板同步工具。在一台设备上复制文本、图片或文件，就可以在连接到同一服务器的另一台设备上粘贴。
