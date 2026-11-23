@@ -47,7 +47,7 @@ brew install --cask Jeric-X/tap/syncclipboard
 > [!NOTE]
 > - 使用 AppImage 以外的软件包时，系统中的 glibc 需为 2.38 或更高版本。
 > - 剪贴板同步不及时或上传乱码时，可以[使用 xclip 或 wl-clipboard 辅助 SyncClipboard 读写剪贴板](./linux-clipboard-tools)。
-> - Wayland 下快捷键或复制粘贴异常时，参考[输入设备权限说明](https://github.com/Jeric-X/SyncClipboard/blob/master/docs/Linux-Input-Permissions.md)。
+> - Wayland 下快捷键或复制粘贴异常时，参考[输入设备权限说明](./linux-input-permissions)。
 
 ## 卸载
 

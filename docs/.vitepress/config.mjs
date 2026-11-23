@@ -13,7 +13,9 @@ function sidebar(english) {
         page('desktop/accounts', '同步账号', 'Sync accounts'),
         page('desktop/history', '历史记录', 'History'),
         page('desktop/builtin-server', '内置服务器', 'Built-in server'),
-        page('desktop/command-line', '命令行参数', 'Command-line arguments')
+        page('desktop/command-line', '命令行参数', 'Command-line arguments'),
+        page('desktop/linux-input-permissions', 'Linux 输入设备权限', 'Linux input device permissions'),
+        page('desktop/linux-clipboard-tools', 'Linux 剪贴板辅助工具', 'Linux clipboard tools')
       ]
     },
     page('mobile/', '移动端', 'Mobile clients'),
