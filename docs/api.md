@@ -50,4 +50,4 @@ PUT /SyncClipboard.json
 
 ## S3 同步协议规范
 
-使用 S3 兼容对象存储作为同步后端时的协议与数据格式规范请参阅 [S3 Adapter Design](https://github.com/Jeric-X/SyncClipboard/blob/master/docs/S3-Adapter-Design.md)。
+使用 S3 兼容对象存储作为同步后端时的协议与数据格式规范请参阅 [S3 设计规范](./s3.md)。

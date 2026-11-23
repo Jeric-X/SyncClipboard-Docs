@@ -50,4 +50,4 @@ PUT /SyncClipboard.json
 
 ## S3 Sync Protocol Specification
 
-For protocol and data format specifications when using S3-compatible object storage as sync backend, please refer to [S3 Adapter Design](https://github.com/Jeric-X/SyncClipboard/blob/master/docs/S3-Adapter-Design.md).
+For protocol and data format specifications when using S3-compatible object storage as sync backend, please refer to [S3 protocol specification](./s3.md).

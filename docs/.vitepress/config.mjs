@@ -18,9 +18,15 @@ function sidebar(english) {
     },
     page('mobile/', '移动端', 'Mobile clients'),
     page('server/', '服务端', 'Server'),
-    page('api', 'API', 'API'),
     page('community', '社区项目', 'Community projects'),
-    page('breaking-changes', '不兼容变更记录', 'Breaking changes')
+    page('breaking-changes', '不兼容变更记录', 'Breaking changes'),
+    {
+      text: english ? 'Development' : '开发',
+      items: [
+        page('api', 'API', 'API'),
+        page('s3', 'S3 设计规范', 'S3 protocol specification')
+      ]
+    }
   ]
 }
 
